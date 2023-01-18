@@ -28,8 +28,15 @@ You can test the running app using curl:
 curl localhost:8080/repositories/mateuszwenus/github-repo-info-webmvc
 ```
 
+## Building and running using Docker
+```bash
+docker build -t github-repo-info-webmvc .
+docker run -p 8080:8080 github-repo-info-webmvc
+```
+
 ## TODOs
 
 * logging
 * circuit breaker
 * Github API authentication?
+
